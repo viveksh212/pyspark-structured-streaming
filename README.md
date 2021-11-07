@@ -9,7 +9,7 @@ Preparation:
 - Start kafka zookeeper
 bin/zookeeper-server-start.sh config/zookeeper.properties
 
------ Start kafka broker
+- Start kafka broker
 bin/kafka-server-start.sh config/server.properties
 
 - Create the kafka topic
@@ -18,7 +18,7 @@ bin/kafka-topics.sh --create --topic fitness --partitions 1 --replication-factor
 - Run the pyspark application
 PIPENV_VENV_IN_PROJECT=1 pipenv shell
 
--- Build and start the application
+- Build and start the application
 make build
 make run
 
