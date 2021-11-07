@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 pyspark = "*"
 findspark = "*"
+kafka-python = "*"
+numpy = "*"
 
 [dev-packages]
 
